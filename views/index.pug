@@ -1,0 +1,8 @@
+extends layout
+
+prepend page
+    - currentYear = new Date().getFullYear()
+    - title = "Home"
+
+block content
+    h1 Welcome

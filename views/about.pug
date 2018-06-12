@@ -1,0 +1,9 @@
+extends layout
+
+prepend page
+    - currentYear = new Date().getFullYear()
+    - title = pageTitle ? pageTitle : "About"
+
+block content
+    h1 #{pageTitle}
+    p Useful help !

@@ -1,0 +1,8 @@
+extends layout
+
+prepend page
+    - currentYear = new Date().getFullYear()
+    - title = "Maintenance"
+
+block content
+    h1 Site currently in maintenance.
